@@ -62,14 +62,14 @@ Page({
     // })
   //  var result = wx.getFileSystemManager();
   //  console.log(result);
-  // wx.checkSession({
-  //   success(res) {
-  //     console.log(res);
-  //   },
-  //   fail(res){
-  //     console.log(res)
-  //   }
-  // })
+  wx.checkSession({
+    success(res) {
+      console.log(res);
+    },
+    fail(res){
+      console.log(res)
+    }
+  })
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
